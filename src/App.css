@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+  height: 100%;
+}
+body {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#login-register {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#login-register .login {
+  width: 40%;
+}
+#login-register .register {
+  width: 40%;
+}
+/* end Login Register */
+
+/* home page */
+#home {
+  height: 80%;
+}
+
+#home .home-title {
+  height: 20%;
+}
+#home .home-title .title {
+  margin-left: 7px;
+  font-size: 1.5rem;
+}
+#home .home-title .online-users {
+  margin-left: 7px;
+  font-size: 1rem;
+  color: green;
+}
+
+#home .home-boxes {
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#home .home-boxes .left-box {
+  height: 100%;
+  width: 30%;
+  border: 1px solid gainsboro;
+}
+#home .home-boxes .left-box .contain {
+  margin: 5%;
+  height: 92%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+}
+
+#home .home-boxes .left-box .contain .search {
+  height: 15%;
+}
+
+#home .home-boxes .left-box .contain .select {
+  height: 60%;
+  border: 1px solid gainsboro;
+}
+
+#home .home-boxes .left-box .select nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#home .home-boxes .left-box .select .tab-content {
+  height: 100%;
+}
+#home .home-boxes .left-box .select .tab-content .tab-pane {
+  height: 100%;
+}
+
+#home .home-boxes .left-box .select .tab-pane .users {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+#home .home-boxes .left-box .select .tab-pane .users::-webkit-scrollbar {
+  display: none;
+}
+#home .home-boxes .left-box .contain .pagination1 {
+  height: 15%;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+#home .home-boxes .right-box {
+  height: 100%;
+  width: 60%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#home .home-boxes .right-box .conversations {
+  height: 82.5%;
+  margin-bottom: 2.5%;
+  border: 1px solid gainsboro;
+}
+#home .home-boxes .right-box .input {
+  height: 15%;
+  border: 1px solid gainsboro;
+}
+/* Responsive */
+/* For Mobile */
+
+@media only screen and (max-width: 500px) {
+  #login-register {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  #login-register .login {
+    width: 55%;
+  }
+  #login-register .register {
+    width: 55%;
   }
 }
