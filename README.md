@@ -3,8 +3,8 @@
 ## Requirements
 
 - [x] User can register/login with email and password
-- [ ] User can log in with Fb/Google account
-- [ ] User stay logged in across browser refresh
+- [x] User can log in with Fb/Google account
+- [x] User stay logged in across browser refresh
 - [x] User can see a list of other users
 - [ ] User can search other users by name
 
@@ -36,4 +36,5 @@
   - [ ] Get the list of users
   - [ ] Get the list of conversations
   - [ ] Socket.io
+
 # chat-app-fe
