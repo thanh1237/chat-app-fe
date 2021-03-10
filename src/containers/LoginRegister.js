@@ -124,6 +124,7 @@ export const LoginRegister = () => {
               type="password"
               placeholder="Password"
               name="password"
+              required
               value={formLoginData.password}
               onChange={handleLoginChange}
               minLength="3"

@@ -1,0 +1,9 @@
+export const conversationTypes = {
+  GLOBAL: "CONVERSATION_TYPE.GLOBAL",
+  PRIVATE: "CONVERSATION_TYPE.PRIVATE",
+};
+
+export const messengerTabNames = {
+  CONVERSATIONS: "MESSENGER.TAB_KEY.CONVERSATIONS",
+  USERS: "MESSENGER.TAB_KEY.USERS",
+};

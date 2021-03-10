@@ -81,6 +81,12 @@ a {
 #home .home-boxes .left-box .contain .select {
   height: 60%;
   border: 1px solid gainsboro;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+#home .home-boxes .left-box .select::-webkit-scrollbar {
+  display: none;
 }
 
 #home .home-boxes .left-box .select nav {
@@ -98,18 +104,32 @@ a {
 }
 
 #home .home-boxes .left-box .select .tab-pane .users {
-  height: 80%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  overflow: hidden;
-  overflow-y: scroll;
 }
 
-#home .home-boxes .left-box .select .tab-pane .users::-webkit-scrollbar {
-  display: none;
+#home .home-boxes .left-box .select .tab-pane .users .user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 20%;
+  margin-left: 5px;
+  margin-bottom: 5px;
 }
+
+#home .home-boxes .left-box .select .tab-pane .users .user img {
+  width: 20%;
+}
+#home .home-boxes .left-box .select .tab-pane .users .user .user-name {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
 #home .home-boxes .left-box .contain .pagination1 {
   height: 15%;
   display: flex;
@@ -130,7 +150,23 @@ a {
 }
 #home .home-boxes .right-box .input {
   height: 15%;
-  border: 1px solid gainsboro;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#home .home-boxes .right-box .input .mess {
+  height: 100%;
+  width: 80%;
+}
+#home .home-boxes .right-box .input .mess .form-group {
+  height: 100%;
+}
+#home .home-boxes .right-box .input .mess .form-group .form-control {
+  height: 100%;
+}
+#home .home-boxes .right-box .input button {
+  height: 90%;
+  width: 15%;
 }
 /* Responsive */
 /* For Mobile */
